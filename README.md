@@ -4,7 +4,12 @@ Real-time vehicle detection is one of the many application of object detection, 
 The startling losses both in human lives and finance caused by vehicle accidents.
 Detecting vehicles in images acquired from a moving platform is a challenging problem.
 vehicle detection together with road detection is heavily applied on ** self-driving cars*, for a car to navigate safely along the road, it has to know where other cars are positioned so as it can avoid a collision.
-# Resources
+## how to operate:
+### step 1: Place the car image in front of camera
+### step 2: Vehicle car detection is displaying on the LCD screen 
+### step 3: Vehicle Detection marked with Red rectange Region with CAR name 
+
+## Resources
 Material Required for the Projects 
 ## Hardwares 
 * Raspberry Pi 4
