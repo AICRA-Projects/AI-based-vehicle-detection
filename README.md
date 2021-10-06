@@ -116,21 +116,32 @@ Probably you get a whole bunch of warnings during the make. Don't pay to much at
 ###### cleaning (frees 300 KB)
 * $ make clean
 * $ sudo apt-get update
-          
+## Step 3: Steps to implement AI Based car detection with Python & OpenCV:
+Imports:
+#### import cv2
+#### import os
+Initialize the classifier:
+#### cascPath=os.path.dirname(cv2.file)+"/data/car.xml"
+#### faceCascade = cv2.CascadeClassifier(cascPath)
+Apply faceCascade on webcam frames:
+code : https://github.com/AICRA-Projects/AI-based-vehicle-detection/blob/main/cars.xml
+
 ## Cascade Classifier: 
 Object Detection using Haar feature-based cascade classifiers is an effective object detection method proposed by Paul Viola and Michael Jones in their paper, "Rapid Object Detection using a Boosted Cascade of Simple Features" in 2001. It is a machine learning based approach where a cascade function is trained from a lot of positive and negative images. It is then used to detect objects in other images.
-
-Here we will work with face detection. Initially, the algorithm needs a lot of positive images (images of faces) and negative images (images without faces) to train the classifier. Then we need to extract features from it. For this, Haar features shown in the below image are used. They are just like our convolutional kernel. Each feature is a single value obtained by subtracting sum of pixels under the white rectangle from sum of pixels under the black rectangle.
+Here we will work with car detection. Initially, the algorithm needs a lot of positive images (images of faces) and negative images (images without faces) to train the classifier. Then we need to extract features from it. For this, Haar features shown in the below image are used. They are just like our convolutional kernel. Each feature is a single value obtained by subtracting sum of pixels under the white rectangle from sum of pixels under the black rectangle.
 * The car.xml can be downloaded here: https://github.com/AICRA-Projects/AI-based-vehicle-detection
 
+## Step 5 : Auto run script in Raspberry pi
+Method 1: rc.local You will need root-level access to modify rc.local, so do so with sudo:
 
-# Operations
-* ---> Place the car image in front of camera
-* ---> Vehicle car detection is displaying on the LCD screen 
-* ---> Vehicle Detection marked with Red rectange Region with CAR name 
+sudo nano /etc/rc.local
+Scroll down, and just before the exit 0 line, enter the following:
 
+python /home/pi/blink.py &
+## step 6: Give Power to the robot by connecting White Usb Cable with USB connector of Power Bank
+          
 # Conclusion 
-Vehicle detection reliability offers advantages for site safety and traffic control. Identifying the perfect technology for your requirements can be challenging for a vehicle detection application. Some of the factors that can play a major role in the success of a vehicle detection system are application environment (indoors or outdoors) , sensor mounting,  sensing range, and target size.
+Vehicle detection reliability offers advantages for site safety and traffic control. Identifying the perfect technology for your requirements can be challenging for a vehicle detection application. Some of the factors that can play a major role in the success of a vehicle detection system are application environment (indoors or outdoors) , sensor mounting, sensing range, and target size.
 # Reference 
 * https://www.engineeringbigdata.com/vehicle-detection-opencv-python-cv2/
 * https://projects.raspberrypi.org/en/projects/using-pip-on-raspberry-pi
