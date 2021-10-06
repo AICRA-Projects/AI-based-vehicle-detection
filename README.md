@@ -138,7 +138,7 @@ sudo nano /etc/rc.local
 Scroll down, and just before the exit 0 line, enter the following:
 
 python /home/pi/blink.py &
-## step 6: Give Power to the robot by connecting White Usb Cable with USB connector of Power Bank
+## Step 6: Give Power to the robot by connecting White Usb Cable with USB connector of Power Bank
           
 # Conclusion 
 Vehicle detection reliability offers advantages for site safety and traffic control. Identifying the perfect technology for your requirements can be challenging for a vehicle detection application. Some of the factors that can play a major role in the success of a vehicle detection system are application environment (indoors or outdoors) , sensor mounting, sensing range, and target size.
