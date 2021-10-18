@@ -9,6 +9,10 @@ vehicle detection together with road detection is heavily applied on ** self-dri
 ### step 2: Vehicle car detection is displaying on the LCD screen 
 ### step 3: Vehicle Detection marked with Red rectange Region with CAR name 
 
+# Circuit Diagram 
+![AI Vehicle Detection System CAM](https://user-images.githubusercontent.com/42414598/137729468-31b161e6-92cc-4f7e-8bde-9600d00e6e76.jpg)
+
+
 ## Resources
 Material Required for the Projects 
 ## Hardwares 
